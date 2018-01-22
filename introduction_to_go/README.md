@@ -1,32 +1,32 @@
 ## Introduction to Go
 
-blah blah, general description...
+Applied machine learning workflows should maintain a high level of integrity in production and be able to fit into the modern infrastructure that is being utilized across industry and research. As it turns out, much of this modern infrastructure is being driven by the open source Go programming language, especially as related to distributed systems, and an increasing number of individuals and companies (Dell/EMC, The New York Times, and more) are writing their mission critical ML systems in Go.
 
 ## Notes
 
-- A matrix is a rectangular array representation of numbers, expressions, etc.
-- Elements in a matrix are referenced by a row and column index.
-- `gonum.org/v1/gonum/mat` provides functionality to create, modify, and manipulate matrices made up of float64 values.
+- Although slightly verbose in certain scenarios, Go is extremely readable and forces you to wrestle with trade offs related to application integrity.
+- Go's built in tooling and IDE integrations are a huge benefit to development (`gofmt`, `golint`, etc.). 
+- ML is more than possible in Go, it is being used in production at major companies.
 
 ## Links
 
-[The Matrix Cookbook](http://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)  
-[Khan Academy - Matrices](https://www.khanacademy.org/math/algebra-home/precalculus/precalc-matrices)  
-[Khan Academy - Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
+[Installing Go and getting started](https://golang.org/doc/install)  
+[The Go tour](https://tour.golang.org/welcome/1)  
+[Go's stdlib docs](https://golang.org/pkg/)  
+[Machine Learning with Go book](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-go)
 
 ## Code Review
 
-[gonum.org/v1/mat docs](https://godoc.org/gonum.org/v1/gonum/mat)    
-[Form a float64 matrix](example1/example1.go)  
-[Modify a matrix](example2/example2.go)  
-[Access values in a matrix](example3/example3.go)  
-[Format matrix output](example4/example4.go)  
+[Parse a clean CSV with python](example1/example1.py)
+[Parse a clean CSV with Go](example2/example2.go)
+[Force Integrity breakdown with python CSV parsing](example3/example3.py)
+[Maintain integrity in Go CSV parsing](example4/example4.go)
 
 ## Exercises
 
 ### Exercise 1
 
-Create a matrix from [diabetes.csv](../data_versioning/data/diabetes.csv) using `gonum.org/v1/gonum/mat`. Format and output the first 10 rows to standard out.
+Implement another way of handling the CSV parsing error we encountered above.  That is, handle the missing value in a way other than throwing an error.
 
 [Template](exercises/template1/template1.go) |
 [Answer](exercises/exercise1/exercise1.go)
