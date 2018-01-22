@@ -28,15 +28,13 @@ Without data, our machine learning models can't learn. This might seem obvious. 
 
 ### Exercise 1
 
-Implement another way of handling the CSV parsing error we encountered above.  That is, handle the missing value in a way other than throwing an error.
+Create a matrix from [diabetes.csv](../data_versioning/data/diabetes.csv) using `gonum.org/v1/gonum/mat`. Format and output the first 10 rows to standard out.
 
 [Template](exercises/template1/template1.go) |
 [Answer](exercises/exercise1/exercise1.go)
 
 ### Exercise 2
 
-Instead of getting the maximum integer in the integer columns, calculate the sum of integers in the integer column based on [example_clean.csv](data/example_clean.csv) another way of handling the CSV parsing error we encountered above.  
 
-[Template](exercises/template2/template2.go) |
-[Answer](exercises/exercise2/exercise2.go)
+
 
