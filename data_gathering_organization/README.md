@@ -19,7 +19,7 @@ Without data, our machine learning models can't learn. This might seem obvious. 
 [Slices](example1/example1.go)  
 [Matrices](example2/example2.go)  
 [Manipulating a matrix](example3/example3.go)  
-[Matrix operations](example4/example4.go)
+[Matrix operations](example4/example4.go)  
 [Parsing a CSV into a matrix](example5/example5.go)  
 [Parsing a CSV into a dataframe](example6/example6.go)  
 [Manipulating a dataframe](example7/example7.go)
