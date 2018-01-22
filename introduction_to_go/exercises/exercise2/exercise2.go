@@ -12,7 +12,7 @@ import (
 func main() {
 
 	// Open the CSV.
-	f, err := os.Open("../../data/example_messy.csv")
+	f, err := os.Open("../../data/example_clean.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -24,8 +24,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Get the maximum value in the integer column.
-	var intMax int
+	// Get the sum of integers in the integer column.
+	var intSum int
 	for _, record := range records {
 
 		// Parse the integer value.
@@ -37,12 +37,10 @@ func main() {
 			intVal = 0
 		}
 
-		// Replace the maximum value if appropriate.
-		if intVal > intMax {
-			intMax = intVal
-		}
+		// Update the integer sum.
+		intSum += intVal
 	}
 
 	// Print the maxium value
-	fmt.Println(intMax)
+	fmt.Println(intSum)
 }

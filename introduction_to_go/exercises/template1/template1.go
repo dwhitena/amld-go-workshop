@@ -7,8 +7,6 @@ import (
 	"log"
 	"os"
 	"strconv"
-
-	"github.com/pkg/errors"
 )
 
 func main() {
@@ -16,7 +14,6 @@ func main() {
 	// Open the CSV.
 	f, err := os.Open("../../data/example_messy.csv")
 	if err != nil {
-		err = errors.Wrap(err, "Could not open CSV")
 		log.Fatal(err)
 	}
 
@@ -24,7 +21,6 @@ func main() {
 	r := csv.NewReader(bufio.NewReader(f))
 	records, err := r.ReadAll()
 	if err != nil {
-		err = errors.Wrap(err, "Could not parse CSV")
 		log.Fatal(err)
 	}
 
@@ -33,9 +29,9 @@ func main() {
 	for _, record := range records {
 		intVal, err := strconv.Atoi(record[0])
 		if err != nil {
-
 			// Handle this error related to missing data.
 		}
+
 		if intVal > intMax {
 			intMax = intVal
 		}
