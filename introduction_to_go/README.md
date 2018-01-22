@@ -13,7 +13,8 @@ Applied machine learning workflows should maintain a high level of integrity in 
 [Installing Go and getting started](https://golang.org/doc/install)  
 [The Go tour](https://tour.golang.org/welcome/1)  
 [Go's stdlib docs](https://golang.org/pkg/)  
-[Machine Learning with Go book](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-go)
+[Machine Learning with Go book](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-go)  
+[Go tooling for ML and data science](https://github.com/gopherdata/resources/tree/master/tooling)
 
 ## Code Review
 
