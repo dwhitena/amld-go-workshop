@@ -35,6 +35,20 @@ Create a matrix from [diabetes.csv](../data_versioning/data/diabetes.csv) using 
 
 ### Exercise 2
 
+Divide the following matrix by its norm:
 
 
+    a = ⎡1  2  3⎤
+        ⎢0  4  5⎥
+        ⎣0  0  6⎦
 
+
+[Template](exercises/template2/template2.go) |
+[Answer](exercises/exercise2/exercise2.go)
+
+### Exercise 3
+
+Use Gota dataframes to read [iris.csv](data/iris.csv) and output three files corresponding to each Iris species (`setosa.csv`, `versicolor`, and `virginica.csv`), each of the three files containing only the rows corresponding to the respective species.
+
+[Template](exercises/template3/template3.go) |
+[Answer](exercises/exercise3/exercise3.go)
