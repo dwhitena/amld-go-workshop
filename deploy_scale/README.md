@@ -1,33 +1,30 @@
-## Introduction to Go
+# Deploying and Scaling Go-based ML
 
-blah blah, general description...
+It's one thing to do some ML experiments on your laptop, but, to create real value in an organization, ML has to be deployed off of your laptop and scaled to production data. Thankfully, there is a variety of Go tooling to accomplish this, and I will illustrate this here.
 
 ## Notes
 
-- A matrix is a rectangular array representation of numbers, expressions, etc.
-- Elements in a matrix are referenced by a row and column index.
-- `gonum.org/v1/gonum/mat` provides functionality to create, modify, and manipulate matrices made up of float64 values.
+- Most companies are considering or are already using Go-based infrastructure tools (Docker and Kubernetes in particular) to manage their workloads at scale.
+- Go-based ML workloads fit nicely into these frameworks and can scale over production data.
+- In addition to the integrity benefits discussed earlier, Go automatically gives you the extra benefits of efficiency, built in concurrency, and easy deployment.
 
 ## Links
 
-[The Matrix Cookbook](http://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)  
-[Khan Academy - Matrices](https://www.khanacademy.org/math/algebra-home/precalculus/precalc-matrices)  
-[Khan Academy - Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
+[Introduction to Docker](https://training.docker.com/introduction-to-docker)  
+[Building minimal Go Docker images](https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/)  
+[What is Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)  
+[Creating Pachyderm analysis pipelines](http://docs.pachyderm.io/en/latest/fundamentals/creating_analysis_pipelines.html)  
+[Distributed computing on Pachyderm](http://docs.pachyderm.io/en/latest/fundamentals/distributed_computing.html)  
+[Updating Pachyderm pipelines](http://docs.pachyderm.io/en/latest/fundamentals/updating_pipelines.html)  
 
 ## Code Review
 
-[gonum.org/v1/mat docs](https://godoc.org/gonum.org/v1/gonum/mat)    
-[Form a float64 matrix](example1/example1.go)  
-[Modify a matrix](example2/example2.go)  
-[Access values in a matrix](example3/example3.go)  
-[Format matrix output](example4/example4.go)  
+[Containerize training of a linear regression model](example1)  
+[Containerize linear regression prediction](example2)  
+[Create a linear regression model training pipeline](example3/train.json)  
+[Create a linear regression prediction pipeline](example4/predict.json)  
 
-## Exercises
+## Demo
 
-### Exercise 1
-
-Create a matrix from [diabetes.csv](../data_versioning/data/diabetes.csv) using `gonum.org/v1/gonum/mat`. Format and output the first 10 rows to standard out.
-
-[Template](exercises/template1/template1.go) |
-[Answer](exercises/exercise1/exercise1.go)
+I will give a demo of a completely scalable, reproducible, and easy to manage ML workshop that is build entirely with Go and infrastructure build with Go. To try this out on your own locally, you can follow [this guide](https://github.com/dwhitena/pach-go-regression).
 

@@ -6,7 +6,7 @@ This repo includes all of the materials that you will need for the "Machine Lear
 
 1. [Introduction to Go](introduction_to_go)
 2. [Data Gathering and Organization](data_gathering_organization)
-3. [Building an ML Model in Go](building_a_model)
+3. [Building ML Models in Go](building_models)
 4. [Deployment and Scaling](deploy_scale)
 5. [Bonus](bonus)
 

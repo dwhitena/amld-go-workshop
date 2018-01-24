@@ -1,4 +1,4 @@
-## Building ML Models
+# Building ML Models
 
 Go actually has a [sizable ecoystems for machine learning and data science](https://github.com/gopherdata/resources/tree/master/tooling). There are packages like `golearn` that allow you to quickly implement common algorithms, such as decision trees and kNN, and there are more advanced packages like `gorgonia` that provided flexible foundations for ML (similar to TensorFlow). Finally, there are easy ways to integrate Go with widely used ML frameworks like TensorFlow, H2O, etc. We will explore a couple of common ML examples here, and a more advanced one in the [bonus section](../bonus), assuming we have time. 
 
@@ -31,7 +31,7 @@ In the following examples, we will implement a linear regression model that pred
 
 In these next examples, we will implement a kNN model that can classify Iris flower species based on measurements of Iris flowers:
 
-[Profile the data](example5/example5.go)
+[Profile the data](example5/example5.go)  
 [Train and use cross-validation to validate a kNN model](example6/example6.go)
 
 ## Exercises

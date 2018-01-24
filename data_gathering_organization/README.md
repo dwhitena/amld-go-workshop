@@ -1,4 +1,4 @@
-## Data Gathering and Organization
+# Data Gathering and Organization
 
 Without data, our machine learning models can't learn. This might seem obvious. However, we need to realize that part of the strength of the models that we build is in the data that we feed them.  We need to make sure that we gather relevant, clean data to power our machine learning models, such that they can operate on the data as expected and produce valuable results.
 

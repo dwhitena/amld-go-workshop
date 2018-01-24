@@ -1,4 +1,4 @@
-## Introduction to Go
+# Introduction to Go
 
 Applied machine learning workflows should maintain a high level of integrity in production and be able to fit into the modern infrastructure that is being utilized across industry and research. As it turns out, much of this modern infrastructure is being driven by the open source Go programming language, especially as related to distributed systems, and an increasing number of individuals and companies (Dell/EMC, The New York Times, and more) are writing their mission critical ML systems in Go.
 
