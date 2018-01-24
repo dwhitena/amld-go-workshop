@@ -1,3 +1,5 @@
+![Alt text](AMLD_gophers.png)
+
 # Machine Learning with Go - AMLD 2018
 
 This repo includes all of the materials that you will need for the "Machine Learning with Go" workshop at [Applied ML Days](https://www.appliedmldays.org/) 2018.  This workshop will help attendees understand how Go can help them be productive and innovative in machine learning, and we will learn how to leverage Go to build robust and valuable applications. To this end, the workshop will clearly introduce the technical aspects of building predictive models in Go, but it will also help attendees understand how and why Go-based machine learning workflows are being applied in real-world scenarios.
