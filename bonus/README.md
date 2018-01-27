@@ -20,12 +20,12 @@ Moreover, in some cases (e.g., streaming analysis) we may want to leverage Go's 
 
 ## Code Review
 
-[Object detection with TensorFlow and GoCV](example1/example1.go)
-[Go and Jupyter](example2/Notebook1.ipynb)
-[Concurrency in Go](example2/Notebook2.ipynb)
-[Streaming data with Go](example2/Notebook5.ipynb)
-[Sentiment analysis with MachineBox](example2/Notebook6.ipynb)
-[Streaming sentiment analysis](example2/Notebook7.ipynb)
+[Object detection with TensorFlow and GoCV](example1/example1.go)  
+[Go and Jupyter](example2/Notebook1.ipynb)  
+[Concurrency in Go](example2/Notebook2.ipynb)  
+[Streaming data with Go](example2/Notebook5.ipynb)  
+[Sentiment analysis with MachineBox](example2/Notebook6.ipynb)  
+[Streaming sentiment analysis](example2/Notebook7.ipynb)  
 
 ## Exercise
 
