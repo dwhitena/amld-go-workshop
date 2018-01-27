@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/csv"
 	"log"
 	"os"
@@ -17,7 +16,7 @@ func main() {
 	defer f.Close()
 
 	// Create a new CSV reader reading from the opened file.
-	reader := csv.NewReader(bytes.NewReader(b.Bytes()))
+	reader := csv.NewReader(f)
 	reader.FieldsPerRecord = 11
 
 	// Read in all of the CSV records
