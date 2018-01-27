@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"image"
 	"image/color"
+	"log"
 	"os"
 	"strconv"
 
@@ -35,9 +36,17 @@ func main() {
 	}
 
 	// Parse the command line arguments.
-	deviceID, _ := strconv.Atoi(os.Args[1])
+	deviceID, err := strconv.Atoi(os.Args[1])
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	model := os.Args[2]
-	descriptions, _ := readDescriptions(os.Args[3])
+
+	descriptions, err := readDescriptions(os.Args[3])
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// Open the default capture device, 0.
 	webcam, err := gocv.VideoCaptureDevice(deviceID)
